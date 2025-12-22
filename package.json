@@ -1,0 +1,18 @@
+{
+  "name": "nreact",
+  "version": "1.0.0",
+  "description": "Namaste react",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.16.3",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "browserlists": [
+    "last 2 versions"
+  ]
+}

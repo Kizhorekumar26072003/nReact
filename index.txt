@@ -1,0 +1,9 @@
+Emmet : emmet is an short abbreviation for html and css code . It will extend into an actual code .basically its an short form for larger templates
+Library vs Framewrok:library is a set of pre written code . we call it whenever we wanted to ,basically we plug the library into our code 
+Framewrok is structure. we plug the code into the framework . we should follow the structure of the framework. 
+CDN : it's content delivery network.it have the static files of our hosted websites . it loads the server fasts.it is an end server
+Why react is known as react:it have to react to changes in state and data . and efficiently update the ui
+WHat is crossorigin in script tag : crossorigin enables the CORS cross origin resource sharing. the js access the external files that hosted in different origin. 
+react and react dom : react is js library. its basic concept id to use reusable components. change data based on the changing states , it has virtual dom. React DOM it is a bridge between react and an actual dom . it renders the react components and change it to actual html,css,js code that browser can understand
+difference between react.development.js and react.production.js files via CDN : dev is optimized for development and debugging . prod is optimized for deployment
+async vs defer: async in script tag is when we render a html file the subsequesnt script tag is fetched paralelly bu texecution of the script tag stops the executionof html . defer is the fetch of script tag is done paralelly but execution is started after the end of the html code.
