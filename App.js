@@ -22,6 +22,7 @@ import ReactDOM from "react-dom/client";
 
 // passing an prop to an component is just like passing an arguments to an function
 // we can pass just props then destructure in the element props.ele , we can just ({ele,ele}) this is called destructure on the fly or const {ele,ele} = props it is destructuring as u know;
+// config driven ui - constrolling the ui through data / config
 const Header = () => {
   return (
     <div className="header">
@@ -59,6 +60,8 @@ const RestaurantCard = (props) => {
     </div>
   );
 };
+
+
 const Body = () => {
   return (
     <div className="body">
@@ -96,8 +99,6 @@ const App = () => {
 
 export const root = ReactDOM.createRoot(document.querySelector("#mUJS"));
 root.render(<App />);
-
-
 
 // config driven UI
 // ldme
