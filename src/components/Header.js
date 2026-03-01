@@ -1,10 +1,9 @@
+import { LOGO_URL } from "../utils/constants";
+
 const Header = () => {
   return (
     <div className="header">
-      <img
-        className="logo"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM_6VlgZU_EhAVqQKKO72nDQNbmCZPhHNybQ&s"
-      />
+      <img className="logo" src={LOGO_URL} />
       <div className="nav-items">
         <ul>
           <li>Home</li>
