@@ -1,4 +1,5 @@
-export const resObj = [
+//using export const is called named export
+export let resObj = [
   {
     type: "restaurant",
     info: {

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Header from "./components/Header.js";
-import Body from "./components/Body.js";
+import Header from "./components/Header.jsx";
+import Body from "./components/Body.jsx";
 
 /**
  * Header
@@ -25,10 +25,6 @@ import Body from "./components/Body.js";
 // passing an prop to an component is just like passing an arguments to an function
 // we can pass just props then destructure in the element props.ele , we can just ({ele,ele}) this is called destructure on the fly or const {ele,ele} = props it is destructuring as u know;
 // config driven ui - constrolling the ui through data / config
-
-const styleCard = {
-  backgroundColor: "#f0f0f0",
-};
 
 // async function getRestaurants() {
 //   try {
@@ -60,6 +56,7 @@ const styleCard = {
 //   }
 // }
 
+//IN Industry Standards , they do not let their files to exceed 100 lines
 const App = () => {
   return (
     <div className="app">
