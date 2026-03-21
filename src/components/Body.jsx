@@ -27,9 +27,7 @@ const Body = () => {
         <button
           onClick={() => {
             setRes(
-              res.filter(
-                (restaurant) => restaurant.info.rating.aggregate_rating <= 4,
-              ),
+              res.filter((restaurant) => restaurant.info.avgRating >= 4.2),
             );
           }}
         >
