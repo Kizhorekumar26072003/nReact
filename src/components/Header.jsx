@@ -4,10 +4,6 @@ import { LOGO_URL } from "../utils/constants";
 export default function Header() {
   const [log, setLog] = useState("Login");
 
-  useEffect(() => {
-    return () => {};
-  }, [log]);
-
   return (
     <div className="header">
       <img className="logo" src={LOGO_URL} />
