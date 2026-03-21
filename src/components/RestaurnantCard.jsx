@@ -4,17 +4,20 @@ const styleCard = {
 
 export const RestaurantCard = (props) => {
   console.log("====================================");
-  console.log(props.res.info.cuisine);
+  console.log(props);
   console.log("====================================");
-  const { image, name, cuisine, rating, cft } = props?.res?.info;
+  const { avgRating, cloudinaryImageId, cuisines, costForTwo, name } =
+    props?.res.info;
+  console.log(cloudinaryImageId);
+
   return (
     <div className="res-card" style={styleCard}>
-      <img alt="logo" src={image.urlWithParams} className="res-logo" />
+      <img alt="logo" src={cloudinaryImageId} className="res-logo" />
       <h3>{name}</h3>
-      <h4>{cuisine.map((n) => n.name).join(", ")}</h4>
+      <h4>{cuisines.map((c) => c)}</h4>
 
-      <h4>{rating.aggregate_rating}</h4>
-      <h4>{cft.text}</h4>
+      <h4>{avgRating}</h4>
+      <h4>{costForTwo}</h4>
     </div>
   );
 };

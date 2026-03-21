@@ -9,6 +9,7 @@
 }
 .nav-items {
   padding: 0px 20px;
+  display: flex;
 }
 .nav-items > ul {
   display: flex;
@@ -44,4 +45,19 @@
 }
 .res-logo {
   width: 100%;
+}
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.shimmer {
+  width: 200px;
+  height: 400px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+.login-btn {
+  padding: 0px 10px;
+  cursor: pointer;
 }
