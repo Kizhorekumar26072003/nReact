@@ -61,3 +61,7 @@
   padding: 0px 10px;
   cursor: pointer;
 }
+.search {
+  display: flex;
+  gap: 5px;
+}
