@@ -52,7 +52,8 @@
 }
 .shimmer {
   width: 200px;
-  height: 400px;
+  height: 200px;
+  border-radius: 12px;
   margin: 20px;
   padding: 20px;
   background-color: #f0f0f0;
@@ -60,4 +61,8 @@
 .login-btn {
   padding: 0px 10px;
   cursor: pointer;
+}
+.ipAndBtn{
+  display: flex;
+  gap: 10px;
 }
