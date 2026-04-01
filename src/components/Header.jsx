@@ -10,7 +10,7 @@ export default function Header() {
       <div className="nav-items">
         <ul>
           <li>Home</li>
-          <li>About Us</li>
+          <li a="/about">About Us</li>
           <li>Contact Us</li>
           <li>Cart</li>
         </ul>

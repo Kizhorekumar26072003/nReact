@@ -2,7 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header.jsx";
 import Body from "./components/Body.jsx";
-
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import About from "./components/About.jsx";
+import Contact from "./components/Contact.jsx";
+import Error from "./components/Error.jsx";
 /**
  * Header
  *  - Logo
@@ -67,8 +70,23 @@ const App = () => {
   );
 };
 
+const appProvider = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+]);
 export const root = ReactDOM.createRoot(document.querySelector("#mUJS"));
-root.render(<App />);
+root.render(<RouterProvider router={appProvider} />);
 
 // config driven UI
 // ldme

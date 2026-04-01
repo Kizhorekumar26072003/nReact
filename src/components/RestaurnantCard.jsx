@@ -1,4 +1,4 @@
-import { CLOUDINARY_BASE_URL } from "../utils/constants";
+import { CLOUDINARY_IMAGE_BASE } from "../utils/constants";
 
 const styleCard = {
   backgroundColor: "#f0f0f0",
@@ -12,7 +12,7 @@ export const RestaurantCard = (props) => {
     <div className="res-card" style={styleCard}>
       <img
         alt="logo"
-        src={`${CLOUDINARY_BASE_URL}/${cloudinaryImageId}`}
+        src={`${CLOUDINARY_IMAGE_BASE}/${cloudinaryImageId}`}
         className="res-logo"
       />
       <h3>{name}</h3>

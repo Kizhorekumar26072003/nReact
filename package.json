@@ -12,7 +12,9 @@
   "dependencies": {
     "parcel": "^2.16.3",
     "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "react-dom": "^19.2.3",
+    "react-router": "^6.30.3",
+    "react-router-dom": "^6.30.3"
   },
   "browserlists": [
     "last 2 versions"
