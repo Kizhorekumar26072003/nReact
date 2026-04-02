@@ -56,3 +56,7 @@ this is named import
 import { name } from './module';
 This is default import
 import anyName from './module';
+
+Types of routing
+Client side routing
+Server side routing
