@@ -6,6 +6,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import About from "./components/About.jsx";
 import Contact from "./components/Contact.jsx";
 import Error from "./components/Error.jsx";
+import ResInfo from "./components/ResInfo.jsx";
 /**
  * Header
  *  - Logo
@@ -87,6 +88,10 @@ const appProvider = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/restaurant/:resID",
+        element: <ResInfo />,
       },
     ],
   },
