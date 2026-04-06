@@ -4,6 +4,7 @@ import { resObj } from "../utils/mockdata";
 import { useEffect, useState } from "react";
 import Shimmer from "./shimmer";
 import { swiggy_RestaurantList_API } from "../utils/constants";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   let [res, setRes] = useState([]);
@@ -56,7 +57,15 @@ const Body = () => {
         {filteredRes.length > 0 ? (
           filteredRes.map((restaurant) => (
             //should give key property to components especially components oon loop. otherwise react wwill re render all the same level elements.
-            <RestaurantCard res={restaurant} key={restaurant.info.id} />
+            // Key must be given to the parent JSX element which is mapped
+            //Link is a special tag given by react-router-dom which is using a tag behind the scenes
+            <Link
+              to={"restaurant/" + restaurant.info.id}
+              key={restaurant.info.id}
+              className="linkCard"
+            >
+              <RestaurantCard res={restaurant} />
+            </Link>
           ))
         ) : (
           <p>No Restaurants found</p>

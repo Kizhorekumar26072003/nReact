@@ -89,3 +89,7 @@
   width: 100px;
   height: 100px;
 }
+.linkCard {
+  text-decoration: none;
+  color: initial;
+}

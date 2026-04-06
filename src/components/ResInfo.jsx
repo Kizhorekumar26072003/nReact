@@ -2,14 +2,18 @@ import { useEffect, useState } from "react";
 import { resObj } from "../utils/mockdata.jsx";
 import Shimmer from "./shimmer.jsx";
 import MenuDish from "./MenuDish.jsx";
+import { useParams } from "react-router";
 const ResInfo = () => {
   const [resMenu, setResMenu] = useState(resObj);
+  const { resId } = useParams();
+  console.log(resMenu);
+
   // useEffect(() => {
   //   fetchData();
   // }, []);
   // const fetchData = async () => {
   //   const data = await fetch(
-  //     "https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=13.0279117&lng=80.26051369999999&restaurantId=374134&catalog_qa=undefined&submitAction=ENTER",
+  //     "https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=13.0279117&lng=80.26051369999999&restaurantId=806891&catalog_qa=undefined&submitAction=ENTER",
   //   );
 
   //   console.log("Status:", data.status);
@@ -17,10 +21,10 @@ const ResInfo = () => {
 
   //   const text = await data.text();
   //   console.log("RAW:", text);
-  //   const json = await data.json();
+  //   // const json = await data.json();
 
-  //   console.log("------------------------", json);
-  //   setResMenu(json);
+  //   // console.log("------------------------", json);
+  //   // setResMenu(json);
   // };
   const { name, costForTwoMessage, areaName, city, cuisines } =
     resMenu[0].data.cards[2].card.card.info;
